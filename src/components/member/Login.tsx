@@ -24,7 +24,7 @@ class Login extends Component<any, any>{
         alert(` 폼 태그 알러트 `)
         this.setState({submitted:true})
         const {userid,password}= this.state
-        if(userid&&password){
+        if(userid && password){
             this.props.login(userid,password)
         }
     }
@@ -68,7 +68,7 @@ class Login extends Component<any, any>{
         </div>
     }
 }
-function mapStateToProps(state) {
+function mapStateToProps(state) { //JSON 반환.
     const { loggingIn } = state.userReducers
     return { loggingIn}
 }
