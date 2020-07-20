@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
 import './App.css';
-import Member from "./pages/Member";
+import SignIn from '../src/components/SignIn'
+import SigninTest from "./components/SigninTest";
+import HideTest from "./components/HideTest";
 const App =() => <div>
-  <Member/>
+  <HideTest/>
 </div>
 
 export default App;
