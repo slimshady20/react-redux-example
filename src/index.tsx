@@ -5,11 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider} from 'react-redux'
 import store from "./helpers/store";
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbreact/dist/css/mdb.css';
+import rootReducer from "./reducers/rootReducer";
+import {createStore} from "redux";
 ReactDOM.render(
-  <Provider store ={store}>
+    <Provider store={createStore(rootReducer)}>
     <App />
   </Provider>,
   document.getElementById('root')
